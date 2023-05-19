@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: actions-test
+    runs-on: actions-demo
 
     steps:
     - uses: actions/checkout@v3
