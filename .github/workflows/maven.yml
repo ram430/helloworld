@@ -7,7 +7,7 @@ name: Ren-hydro-runner-creation
 on:
   push:
     branches:
-      - test
+      - main
   pull_request:
       types: [opened, synchronize, reopened]
 
