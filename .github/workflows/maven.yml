@@ -31,10 +31,11 @@ jobs:
           #########################################################
           aws ecr get-login-password --region $ECR_REGION | docker login --username AWS --password-stdin $ECR_REGISTRY
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG . 
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           
 #      - name: Docker Push to ECR
 #        run: |
 #          #########################################################
 #          ### Publishes the built Dockerfile image to AWS ECR   ###
 #          ##########################################################
-        docker push 532594069918.dkr.ecr.us-east-1.amazonaws.com/actions-demo:actions-demo
+              #docker push 532594069918.dkr.ecr.us-east-1.amazonaws.com/actions-demo:actions-demo
