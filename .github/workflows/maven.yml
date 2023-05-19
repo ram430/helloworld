@@ -14,7 +14,7 @@ on:
 ##### JOBS#####
 jobs:
   docker-build-publish:
-    runs-on: actions-demo
+    runs-on: docker
     env:
       ECR_REGISTRY: ${{ secrets.AWS_ECR_REGISTRY_NAME }}
       ECR_REPOSITORY: ${{ secrets.AWS_ECR_REPOSITORY_NAME }}
